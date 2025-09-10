@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 // Solves the quartic equation: a*x^4 + b*x^2 + c = 0
@@ -46,15 +47,16 @@ int main() {
 
         double x[4];
         int n = solveQuartic(a, b, c, x);
-
         if (n == -1) {
-            cout << "Infinite solutions." << endl;
+            cout << "Infinite solutions" << endl;
         } else if (n == 0) {
-            cout << "No solution." << endl;
+            cout << "No solution" << endl;
         } else {
-            cout << "The equation has " << n << " real solution(s): ";
+            cout << n << " real solution(s): ";
+            cout << fixed << setprecision(6);
             for (int i = 0; i < n; i++) {
-                cout << x[i] << " ";
+                cout << x[i];
+                if (i < n - 1) cout << " ";
             }
             cout << endl;
         }
