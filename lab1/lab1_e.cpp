@@ -14,10 +14,9 @@ return max;
 
 int main() {
     int T; 
-    cin >> T;   // T = tổng số dòng dữ liệu (ở đây = 12)
+    cin >> T;   
     
-    int numTest = T / 3; 
-    for (int i = 0; i < numTest; i++) {
+    for (int i = 0; i < T; i++) {
         int a, b, c;
         cin >> a >> b >> c;   
         cout << findMax(a, b, c) << endl;
