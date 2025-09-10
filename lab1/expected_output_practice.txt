@@ -1,0 +1,7 @@
+Infinite solutions
+No solution
+2 real solution(s): 2.000000 -2.000000
+2 real solution(s): 1.000000 -1.000000
+No solution
+4 real solution(s): 2.000000 -2.000000 1.000000 -1.000000
+1 real solution(s): 0.000000
