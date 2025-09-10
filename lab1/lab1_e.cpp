@@ -16,10 +16,10 @@ int main() {
     int T; 
     cin >> T;   // T = tổng số dòng dữ liệu (ở đây = 12)
     
-    int numTest = T / 3;   // số test case = T / 3
+    int numTest = T / 3; 
     for (int i = 0; i < numTest; i++) {
         int a, b, c;
-        cin >> a >> b >> c;   // đọc 3 số liên tiếp
+        cin >> a >> b >> c;   
         cout << findMax(a, b, c) << endl;
     }
     return 0;
